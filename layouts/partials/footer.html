@@ -1,0 +1,21 @@
+<div class="footer container text-center" id="contact">
+  <ul class="footer-icons list-inline">
+    {{ range $.Site.Params.social }}
+    <li>
+      <a href="{{ .link | safeURL }}" target="_blank" rel="noreferrer"><i class="{{ .icon }} footer-icon fa-3x" aria-label="{{ .alt }}"></i></a>
+    </li>
+    {{ end }}
+  </ul>
+  <!-- <div class="credit">
+    {{ $.Site.Params.copyright | markdownify }}
+    <span id="current-year"></span>
+  </div> -->
+</div>
+
+<footer class="footer text-center py-4">
+  <hr class="my-3" style="opacity:0.2;">
+  <p><strong>{{ .Site.Title }}</strong> portfolio developed and maintained by
+    <a href="{{ site.Data.content.footer.github }}" target="_blank">Antorip Sahu</a>
+  </p>
+  <p class="text-muted">© {{ now.Format "2006" }} {{ .Site.Title }}. All rights reserved.</p>
+</footer>

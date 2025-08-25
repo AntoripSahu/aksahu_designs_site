@@ -1,0 +1,111 @@
+########################## hero area ##########################
+hero:
+  title: "I'm Asim Kumar Sahu"
+
+  # animated text loop
+  occupations:
+    - 'Mechanical Engineer from IIT KGP'
+    - 'Structural Engineering: 2D and 3D Design'
+    - 'Technical Advisor and Mechanical Design Consultant'
+    - 'Research & Development: Mechanical & Process Engineering'
+
+  # hero background image
+  bg_image: 'images/backgroundDC.jpg'
+  # optional mobile breakpoint background
+  mobile_bg_image: 'images/backgroundSD.jpg'
+
+########################### About ##################################
+about:
+  enable: true
+  image: 'images/aksahu_profile.jpg'
+  title: 'THIS IS ME'
+  content: |
+    I am a Mechanical Engineering & Design Consultant with over 35 years of experience in industrial equipment design, large-scale project execution, and engineering systems procurement. I deliver end-to-end solutions, from concept through commissioning, across manufacturing, research, and industrial design sectors.
+
+    Recognized for improving efficiency, reducing costs, and ensuring timely, on-budget delivery, I also offer advisory and consultancy services for organizations seeking flexible, project-based, or part-time engineering leadership.
+
+    If you have any questions or would like to discuss a project, feel free to reach out via [LinkedIn](#contact) or [email](#contact).
+  button:
+    enable: true
+    label: 'DOWNLOAD MY RESUME'
+    link: 'resume/aksahu_resume.pdf'
+    icon: 'fa-download'
+
+
+########################### Experience ##############################
+experience:
+  enable: true
+  title: 'EXPERIENCE'
+  experience_list:
+    - name: Technical Advisor, Design & Engineering
+      company: LECHLER INDIA, Kolkata, India
+      duration: '2020 - 2025'
+      content: I designed spray-headers in AutoCAD and developed 3D models in Inventor for sales promotion, along with header-mounting structures for both government and commercial applications. Notably, I achieved record turnaround times in structural design for a prestigious Government of India project as well as for a large-scale sanitization system for commercial vehicles and workforce safety.
+
+
+    - name: Mechanical Engineering & Design Consultant
+      company: EARTH TEKNIKS, Kolkata, India (Part-Time)
+      duration: '2017 - 2020'
+      content: Designed and developed a sector-gate and a compaction-roller for TISCO, earning repeat orders across multiple machines and units.
+
+    - name: Deputy General Manager & Head of Group (Agglomeration)
+      company: STEEL AUTHORITY OF INDIA LTD, Ranchi, India
+      duration: '1981 - 2017'
+      content: Led teams of engineers and scientists in steel and iron-making processes, overseeing equipment design and maintenance of key facilities such as the R&D center and ISPAT Bhawan at SAIL, Ranchi. Managed projects across the full lifecycle—from planning and design to commissioning and inspection—while also contributing to the wider engineering community through active participation in national and international seminars.
+
+############################### Skill #################################
+skill:
+  enable: true
+  title: 'SKILLS'
+  showpercent: false
+  skill_list:
+    - name: 'AutoCAD 2D & 3D Design'
+      percentage: '95%'
+
+    - name: 'Autodesk Inventor Design'
+      percentage: '93%'
+
+    - name: 'Mechnical Engineering Advising'
+      percentage: '85%'
+
+######################### funfacts #############################3
+funfacts:
+  enable: true
+  title: 'A LITTLE MORE ABOUT ME'
+  funfacts_list:
+    - name: 'PATENTS'
+      image: 'images/icons/patent.png'
+      count: '9'
+      animation: true
+
+    - name: 'PAPERS'
+      image: 'images/icons/publication.png'
+      count: '22'
+      animation: true
+
+    - name: 'IIT KGP Alumnus'
+      image: 'images/icons/degree.png'
+      count: '1980'
+      animation: false
+
+############################# portfolio ################################
+portfolio:
+  enable: true
+  title: 'MY WORK'
+  portfolio_list:
+    - name: Ejector Unit
+      image: 'images/portfolio/ejector_unit.jpg'
+      description: Designed an ejector for pneumatic conveying of micron-sized powders. Optimized suction chamber and nozzle geometry for particle size, density, and shape, ensuring stable entrainment with minimal agglomeration. CAD-modeled and dimensioned for fabrication, with focus on efficiency, low pressure drop, and reliability.
+
+    - name: Dispenser Body
+      image: 'images/portfolio/dispenser_body.jpg'
+      description: Designed a pressure vessel for a dispensing unit, used to store and inject powder material at high pressure in process industries. The vessel geometry and reinforcement were developed to ensure strength, safe pressurization, and reliable discharge of fine powders. Suitable for pneumatic conveying and injection systems where precise dosing and consistent flow are required. Modeled and detailed in CAD for fabrication, with focus on structural integrity and operational safety.
+
+    - name: Dispensing Unit on Structural Platform
+      image: 'images/portfolio/dispenser_unit.jpg'
+      description: This unit is designed for high-pressure dispensing of powdered material. It is mounted on a structural frame and consists of a charging hopper, an intermediate pressurized chamber, a dispenser vessel, a fluidizing chamber, and an ejector. The system conveys material through a pipeline using compressed air, ensuring controlled, efficient, and reliable transfer of powders in process applications where material is to be injected at considerably high pressure.
+
+############################# development and maintenance ################################
+
+footer:
+  github: "https://github.com/AntoripSahu"

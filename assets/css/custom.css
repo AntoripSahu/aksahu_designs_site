@@ -1,0 +1,58 @@
+
+.md-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  /* centers + space top/bottom */
+  padding-bottom: 1rem;
+  /* ensures extra space below */
+}
+
+.og-expander,
+.og-expander .og-expander-inner {
+  height: auto !important;
+  /* let container grow with image */
+  max-height: none !important;
+  /* remove fixed max height */
+  overflow: visible !important;
+  /* stop hiding bottom of image */
+}
+
+.og-expander img,
+.md-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.og-expander {
+  max-height: 90vh;
+  /* don’t exceed viewport */
+  overflow-y: auto;
+  /* scroll instead of cropping */
+}
+
+/* ADD: give the details area some bottom breathing room */
+.portfolio .og-expander .og-details {
+  padding-bottom: 24px !important;   /* ← THIS is the real fix */
+}
+
+/* Bonus: also add margin under any images inside the modal */
+.portfolio .og-expander .og-details img,
+.portfolio .og-expander .og-fullimg img,
+.portfolio .md-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 24px !important;    /* visual gap below image */
+}
+
+.portfolio .og-expander {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.portfolio .og-expander .og-fullimg {
+  margin-bottom: 24px; /* space between top image and description */
+}

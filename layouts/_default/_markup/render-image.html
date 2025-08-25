@@ -1,0 +1,15 @@
+{{- $src := .Destination | safeURL -}}
+{{- $alt := .Text | default "" -}}
+
+{{/* Try to load from assets pipeline */}}
+{{- $img := resources.Get $src -}}
+
+{{- if $img }}
+  {{/* Resize without cropping: width 700px, height auto */}}
+  <!-- {{ $resized := $img.Resize "700x" }} -->
+    {{ $resized := .Fit "1200x1200" }}
+  <img src="{{ $resized.RelPermalink }}" alt="{{ $alt }}">
+{{- else }}
+  {{/* fallback: just output normal <img> */}}
+  <img src="{{ $src }}" alt="{{ $alt }}">
+{{- end }}

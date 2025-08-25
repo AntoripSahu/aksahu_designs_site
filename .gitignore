@@ -1,0 +1,25 @@
+# Hugo build output
+/public/
+
+# Hugo cache and resources
+/resources/_gen/
+.cache/
+builds
+hugo_stats.json
+package-lock.json
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Node / package dependencies if you use npm/yarn
+node_modules/
+npm-debug.log
+
+# Environment / secrets
+.env
+
+# Others
+.dist
+.tmp
+.sass-cache

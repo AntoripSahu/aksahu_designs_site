@@ -4,9 +4,13 @@
 
   <meta name="google-site-verification" content="wyg5qGQsjriUgCi8u57C8HecG3B4bli2FKt4hCCk3J8" />
 
+  <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+  <meta name="robots" content="index, follow">
+
   {{ "<!-- mobile responsive meta -->" | safeHTML }}
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}" />
+  <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+
   {{ with .Site.Params.author }}
   <meta name="author" content="{{ . }}" />
   {{ end }}
@@ -53,7 +57,8 @@
   <!-- Open Graph for Personal Portfolio -->
   {{ $about := site.Data.content.about }}
   <meta property="og:type" content="profile" />
-  <meta property="og:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}" />
+  <!-- <meta property="og:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}" /> -->
+  <meta property="og:title" content="{{ .Site.Title }}" />
   <meta property="og:description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
   <meta property="og:site_name" content="{{ .Site.Title }}" />

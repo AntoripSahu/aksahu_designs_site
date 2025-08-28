@@ -53,7 +53,6 @@ weight = 3
 [params]
 copyright = "Copyright A.K.Sahu Designs &copy;"
 # Meta data
-# description = "A.K.Sahu Designs | Personal Portfolio"
 description = "Portfolio of Asim Kumar Sahu, Mechanical Engineer (IIT Kharagpur) with 35+ years of expertise in industrial equipment design, structural engineering, CAD, and consultancy projects."
 author = "Asim Kumar Sahu"
 favicon = "images/favicon.svg"

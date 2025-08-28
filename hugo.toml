@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "https://aksahu-designs.netlify.app"
-title = "A.K.Sahu Designs"
+title = "A.K.Sahu Designs | Portfolio of Asim Kumar Sahu, Mechanical Engineer (IIT Kharagpur)"
 theme = "port-hugo"
 
 ############################# Plugins ##############################

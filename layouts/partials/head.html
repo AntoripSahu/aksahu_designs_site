@@ -57,7 +57,6 @@
   <!-- Open Graph for Personal Portfolio -->
   {{ $about := site.Data.content.about }}
   <meta property="og:type" content="profile" />
-  <!-- <meta property="og:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}" /> -->
   <meta property="og:title" content="{{ .Site.Title }}" />
   <meta property="og:description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
@@ -75,7 +74,7 @@
       "name": "{{ .Site.Params.author }}",
       "url": "{{ .Site.BaseURL }}",
       "image": "{{ $about.image | relURL | absURL }}",
-      "jobTitle": "Mechanical Engineering & Design Consultant",
+      "jobTitle": "Mechanical Engineer & Design Consultant",
       "description": "{{ $about.content | plainify }}"
     }
   </script>

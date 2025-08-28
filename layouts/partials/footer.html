@@ -6,16 +6,26 @@
     </li>
     {{ end }}
   </ul>
-  <!-- <div class="credit">
-    {{ $.Site.Params.copyright | markdownify }}
-    <span id="current-year"></span>
-  </div> -->
 </div>
 
 <footer class="footer text-center py-4">
   <hr class="my-3" style="opacity:0.2;">
-  <p><strong>{{ site.Data.content.footer.short_title }}</strong> portfolio developed and maintained by
+  <p><strong>
+      {{ if site.Data.content.footer.short_title }}
+      {{ site.Data.content.footer.short_title }}
+      {{ else }}
+      {{ .Title }}
+      {{ end }}
+
+    </strong> portfolio developed and maintained by
     <a href="{{ site.Data.content.footer.github }}" target="_blank">Antorip Sahu</a>.
   </p>
-  <p class="text-muted">© {{ now.Format "2006" }} {{ site.Data.content.footer.short_title }}. All rights reserved.</p>
+  <p class="text-muted">© {{ now.Format "2006" }}
+    {{ if site.Data.content.footer.short_title }}
+    {{ site.Data.content.footer.short_title }}
+    {{ else }}
+    {{ .Title }}
+    {{ end }}
+    . All rights reserved.
+  </p>
 </footer>

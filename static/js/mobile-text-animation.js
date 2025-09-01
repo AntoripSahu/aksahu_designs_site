@@ -1,7 +1,12 @@
+let mobileAnimationInterval;
+let isAnimationActive = false;
+
 function initMobileAnimation() {
+  const subtitles = document.querySelectorAll(".mobile-animated-text span");
+
   if (window.innerWidth < 768) {
-    const subtitles = document.querySelectorAll(".mobile-animated-text span");
-    if (subtitles.length > 0 && !subtitles[0].classList.contains("active")) { // avoid duplicates
+    if (!isAnimationActive && subtitles.length > 0) {
+      isAnimationActive = true;
       let index = 0;
 
       function showNext() {
@@ -10,11 +15,16 @@ function initMobileAnimation() {
       }
 
       showNext();
-      setInterval(showNext, 3000);
+      mobileAnimationInterval = setInterval(showNext, 3000);
+    }
+  } else {
+    if (isAnimationActive) {
+      clearInterval(mobileAnimationInterval);
+      subtitles.forEach(s => s.classList.remove("active"));
+      isAnimationActive = false;
     }
   }
 }
 
-document.addEventListener("DOMContentLoaded", initMobileAnimation); // Run on page load
-
-window.addEventListener("resize", initMobileAnimation); // Run on window resize
+document.addEventListener("DOMContentLoaded", initMobileAnimation);
+window.addEventListener("resize", initMobileAnimation);

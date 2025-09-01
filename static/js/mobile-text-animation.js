@@ -15,7 +15,7 @@ function initMobileAnimation() {
       }
 
       showNext();
-      mobileAnimationInterval = setInterval(showNext, 3000);
+      mobileAnimationInterval = setInterval(showNext, 5000);
     }
   } else {
     if (isAnimationActive) {

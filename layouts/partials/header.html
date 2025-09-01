@@ -14,7 +14,7 @@
       <div class="col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 head-container">
         <div class="head-holder">
           <h1 class="introduction">{{ .title | markdownify | emojify }}</h1>
-          <div class="animated-text">
+          <div class="animated-text d-none d-md-block">
             <strong class="cd-headline clip">
               <span class="cd-words-wrapper">
                 {{ range $index, $elements:= .occupations }} {{ if eq $index 0
@@ -24,12 +24,17 @@
               </span>
             </strong>
           </div>
-          {{ if .button.enable }} {{ with .button }}
-          <a class="hireMe button" href="{{ .link }}">{{ .label }}</a>
-          {{ end }} {{ end }}
+
+          <div class="mobile-animated-text d-md-none">
+            {{ range $elements:= .occupations }}
+            <span>{{ . }}</span>
+            {{ end }}
+            {{ if .button.enable }} {{ with .button }}
+            <a class="hireMe button" href="{{ .link }}">{{ .label }}</a>
+            {{ end }} {{ end }}
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  {{ end }}
+    {{ end }}
 </section>

@@ -82,7 +82,6 @@ icon = "fas fa-envelope"
 link = "mailto:aksahu.designs@gmail.com"
 
 
-
 contentDir = "content/english"
 weight = 1
 home = "Home"

@@ -1,6 +1,6 @@
 # A.K.Sahu Designs [Portfolio Website](https://aksahu-designs.netlify.app/)
 
-This is a personal portfolio website for **Asim Kumar Sahu**, designed, developed and maintained by [**Antorip Sahu**](https://github.com/AntoripSahu). The site showcases engineering projects, designs, and technical expertise in the field of Mechanical Design and Process Engineering.  
+This is a personal portfolio website for [**Asim Kumar Sahu**](https://aksahu-designs.netlify.app/), designed, developed and maintained by [**Antorip Sahu**](https://github.com/AntoripSahu). The site showcases engineering projects, designs, and technical expertise in the field of Mechanical Design and Process Engineering.  
 
 Built with [**Hugo**](https://themes.gohugo.io/) and powered by the [**Port Hugo theme**](https://themes.gohugo.io/themes/port-hugo/). This theme can be downloaded from [**here**](https://github.com/tylersayshi/port-hugo).
 

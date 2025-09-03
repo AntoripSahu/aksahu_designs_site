@@ -25,7 +25,14 @@ Additional Terms
 -------------------------------------------------------------------
 
 - Portfolio Content (Text, Images, Designs, and Personal Material)
-  All original content included in this repository — including text, portfolio projects, technical drawings, and images — is the intellectual property of A.K.Sahu Designs unless otherwise noted. This material may not be copied, reproduced, or redistributed in any form without explicit permission.
+  All original content included in this repository — including text, portfolio
+  projects, technical drawings, and images — is the intellectual property of
+  A.K.Sahu Designs unless otherwise noted. This material may not be copied,
+  reproduced, or redistributed in any form without explicit permission.
 
 - Theme License
-  This project uses the Port Hugo theme https://themes.gohugo.io/themes/port-hugo/, which is licensed separately under its original license. You are free to use and modify the theme as per its license terms on https://github.com/tylersayshi/port-hugo.
+  This project uses the Port Hugo theme
+  https://themes.gohugo.io/themes/port-hugo/,
+  which is licensed separately under its original license. You are free to use
+  and modify the theme as per its license terms on
+  https://github.com/tylersayshi/port-hugo.
